@@ -1,7 +1,7 @@
-package tests;
+package guru.qa.tests;
 
+import guru.qa.RegistrationPage;
 import org.junit.jupiter.api.Test;
-import pages.RegistrationPage;
 
 public class DemoQATestWithDsl extends TestBase {
 

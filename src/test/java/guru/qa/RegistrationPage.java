@@ -1,7 +1,7 @@
-package pages;
+package guru.qa;
 
 import com.codeborne.selenide.SelenideElement;
-import pages.components.CalendarComponent;
+import guru.qa.pages.components.CalendarComponent;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
@@ -10,20 +10,21 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class RegistrationPage {
 
-    public CalendarComponent calendar = new CalendarComponent();
     SelenideElement firstNameInput = $("#firstName"),
-            lastNameInput = $("#lastName"),
-            emailInput = $("#userEmail"),
-            genderInput = $("#genterWrapper"),
-            userNumberInput = $("#userNumber"),
-            subjectInput = $("#subjectsInput"),
-            hobbySportInput = $("#hobbiesWrapper"),
-            uploadPicturePaste = $("#uploadPicture"),
-            currentAddressFill = $("#currentAddress"),
-            stateInput = $("#react-select-3-input"),
-            cityInput = $("#react-select-4-input"),
-            submitButton = $("#submit"),
-            resultsTable = $(".table-responsive");
+                    lastNameInput = $("#lastName"),
+                    emailInput =  $("#userEmail"),
+                    genderInput = $("#genterWrapper"),
+                    userNumberInput = $("#userNumber"),
+                    subjectInput = $("#subjectsInput"),
+                    hobbySportInput = $("#hobbiesWrapper"),
+                    uploadPicturePaste = $("#uploadPicture"),
+                    currentAddressFill = $("#currentAddress"),
+                    stateInput = $("#react-select-3-input"),
+                    cityInput = $("#react-select-4-input"),
+                    submitButton = $("#submit"),
+                    resultsTable = $(".table-responsive");
+
+    public CalendarComponent calendar = new CalendarComponent();
 
     public RegistrationPage openPage() {
         open("https://demoqa.com/automation-practice-form");
