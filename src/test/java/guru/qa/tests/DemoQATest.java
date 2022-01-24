@@ -24,7 +24,7 @@ public class DemoQATest extends TestBase {
                 state = "NCR",
                 city = "Noida";
 
-        open("https://demoqa.com/automation-practice-form");
+        open("");
         $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
 
         $("#firstName").setValue(firstName);
