@@ -13,7 +13,7 @@ public class TestBase {
     static void beforeAll() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
-        Configuration.baseUrl = "https://demoqa.com";
+        Configuration.baseUrl = "https://demoqa.com/automation-practice-form";
         Configuration.browserSize = "1920x1080";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
