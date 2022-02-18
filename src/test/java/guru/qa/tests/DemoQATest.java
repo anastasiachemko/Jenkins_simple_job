@@ -12,7 +12,7 @@ public class DemoQATest extends TestBase {
     public void fillForm() {
 
         String
-                firstName = "Sergey",
+                firstName = "Egor",
                 lastName = "Me",
                 userEmail = "ya@ya.ru",
                 gender = "Male",
@@ -45,7 +45,7 @@ public class DemoQATest extends TestBase {
         $("#submit").click();
 
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-        $(".table tbody").shouldHave(text("Sergey Me"),
+        $(".table tbody").shouldHave(text("Egor Me"),
                 text("ya@ya.ru"),
                 text("Male"),
                 text("1234567890"),
